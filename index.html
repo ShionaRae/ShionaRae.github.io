@@ -1,23 +1,30 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<DOCTYPE! html>
+  <html>
+    <head>
+      <title> Shiona Rae </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+    <div class="navigation">
+      <ul>
+        <li>Home</li>
+        <li>Paintings</li>
+        <li>Sketches</li>
+        <li>Graphics</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+      
+    <div class="cover">
+          <div class="cover-content">
+            <h1>Welcome!</h1>
+            <h3>Have a look around</h3>
+         </div>
+    </div>
+      
+    <div class="pre-footer">
+      <h3>All art is made with emotion.</h3>
+    </div>
+      
+    <!-- add <div class="footer"> with social media links as soon as you learn how! -->
